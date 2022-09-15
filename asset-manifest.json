@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BratLi/static/css/main.45ad3ac5.css",
+    "main.js": "/BratLi/static/js/main.c0765568.js",
+    "static/media/galleryBackground.jpg": "/BratLi/static/media/galleryBackground.e76ae369cc96d9745e35.jpg",
+    "index.html": "/BratLi/index.html",
+    "main.45ad3ac5.css.map": "/BratLi/static/css/main.45ad3ac5.css.map",
+    "main.c0765568.js.map": "/BratLi/static/js/main.c0765568.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45ad3ac5.css",
+    "static/js/main.c0765568.js"
+  ]
+}
