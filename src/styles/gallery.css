@@ -1,0 +1,113 @@
+.gallery__container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden!important;
+}
+
+.gallery_body {
+  position: fixed;
+}
+
+.container {
+  width: calc(10 * 100vw);
+  height: 100%;
+  margin: 0px;
+  top: 0;
+  left:0;
+  position: relative;
+  transition: 2s all;
+  padding-top: 4rem;
+}
+
+.imgs_div {
+  display: inline;
+  float: left;
+  background-color: white;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  z-index: -10;
+}
+
+.imgs {
+  display: inline;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.over_div {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  
+}
+
+.left_arrow {
+  z-index: 10;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  font-size: 2rem;
+  color: black;
+  opacity: .3;
+  transition: 2s all;
+  display: inline;
+}
+
+.right_arrow {
+  right: 2%;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: black;
+  opacity: .3;
+  transition: 2s all;
+  display: none;
+}
+
+.left_arrow:hover, .right_arrow:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.go_back {
+  color: red;
+  position: absolute;
+  font-size: 2rem;
+  margin: .5rem;
+  transition: 2s all;
+  left: 0;
+  top: 2rem;
+}
+
+.go_back:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.go_back > i {
+  padding-bottom: -1rem;
+  margin-top: -1rem;
+}
+
+/* Meida queris */
+
+@media screen and (max-width: 1300px) {
+  .left_arrow, .right_arrow {
+    color: var(--mainWhite);
+    opacity: .9;
+  }
+
+}

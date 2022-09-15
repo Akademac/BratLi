@@ -1,0 +1,241 @@
+
+.header__div {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 2px solid var(--lightgrey);
+  background-color: transparent;
+  position: fixed;
+  z-index: 100000;
+}
+
+/* Main Nav */
+
+.mainNav__wrapper {
+  width: 35rem;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.mainNav__ul {
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.mainNav__ul > li a {
+  display: inline;
+  transition: 2s all;
+  cursor: pointer;
+}
+
+.mainNav__ul > li a:hover {
+  color: var(--mainRed);
+}
+
+.dd__btn {
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid var(--mainRed);
+  color: var(--mainRed);
+  padding: 0rem .2rem;
+  margin-left: -.3rem;
+  cursor: pointer;
+  transition: 2s all;
+  box-shadow: 1px 1px 2px var(--lightgrey);
+  border-radius: 3px;
+}
+
+.dd__btn:hover {
+  color: var(--mainBlack);
+  border: 1px solid var(--mainBlack);
+}
+
+.shoppingCart__btn b {
+  margin-left: .1rem;
+  color: red;
+}
+
+/* Drop Down */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  position: absolute;
+  padding: 1rem;
+  width: 10rem;
+  top: calc(100%-1rem);
+  left: -.46rem;
+  padding-left: .2rem;
+  opacity: 0;
+  transition: 1s ease-in;
+  transform: translateY(-.6rem);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dropdown__menu > ul {
+  list-style: none;
+}
+
+.dropdown__menu li {
+  padding: .5rem .4rem;
+  margin-top: .1rem;
+  box-shadow: 1px 1px 2px var(--mainBlack);
+  cursor: pointer;
+  transition: 1s all;
+  font-weight: 500;
+  text-transform: capitalize;
+  pointer-events: all;
+}
+
+.dropdown__menu li:hover {
+  box-shadow: 2px 2px 4px var(--mainBlack);
+}
+
+.dropdown__menu a:first-child {
+  padding-top: 0rem;
+}
+
+.dropdown > .dd__btn:focus + .dropdown__menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-.3rem);
+  visibility: visible;
+}
+
+/* Mini Nav */
+
+.navMini__btn {
+  width: 100%;
+  height: 100%;
+  display: none;
+  margin: 0rem auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  font-size: 1.2rem;
+  transition: 2s all;
+}
+
+.fa-times {
+  color: white;
+  transition: 2s all;
+  font-size: 1.2rem;
+}
+
+.navMini__btn > i {
+  cursor: pointer;
+}
+
+.mini__nav {
+  width: 100%;
+  height: 0vh;
+  top: 0;
+  background-color: var(--mainRed);
+  position: absolute;
+  z-index: -1000;
+  visibility: hidden;
+  transition: 1s all;
+  color: white;
+  overflow: hidden;
+}
+
+.mini__nav_active {
+  height: 100vh;
+  visibility: visible;
+}
+
+.miniNav__ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  list-style: none;
+}
+
+.miniNav__ul ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+
+.miniNav__ul ul > a {
+  margin-top: 2rem;
+  color: var(--mainWhite);
+}
+
+.miniNav__ul > li {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.miniNav__ul > li:first-child {
+  padding-top: 0rem;
+}
+
+.miniNav__hr {
+  width: 50%;
+  margin-top: 4rem;
+}
+
+.mini__nav b {
+  color: var(--mainWhite)!important;
+}
+
+
+
+/* Media Queris */
+
+@media screen and (max-width: 700px) {
+  .navMini__btn {
+    display: flex;
+  }
+
+  .mainNav__wrapper {
+    display: none;
+  }
+}
+
+
+@media screen and (max-height: 700px) {
+  .miniNav__ul > li {
+    font-size: 1.2rem;
+  }
+
+  .miniNav__ul > li:first-child {
+    padding-top: 0rem;
+    margin-top: -4rem;
+  }
+  
+  .miniNav__hr {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .miniNav__ul ul > a {
+    margin-top: 1rem;
+    color: var(--mainWhite);
+  }
+
+}
+
+@media screen and (max-height: 500px) {
+  .miniNav__ul > li {
+    padding-top: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+
