@@ -288,7 +288,7 @@ input:focus {
 
   .gallery__wrapper {
     height: 50rem;
-    margin-top: -5rem;
+    margin-top: -6rem;
   }
 
   .gallery__wrapper > a {
@@ -305,6 +305,46 @@ input:focus {
   .contact__div {
     height: 75rem;
   }
+
+  .con_left > h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .con_left > h2,
+  .con_left > p {
+    text-align: center;
+  }
+
+  .con_left > h3 {
+    font-size: 3rem;
+    margin: 2rem auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .con_right {
+    align-items: center;
+  }
+
+  .con_right > h3 {
+    margin-left: 0rem;
+  }
+
+  .con_right > form {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0rem; 
+   }
+
+   .con_btn {
+    display: block;
+    border: 1px solid black;
+    margin: 1.7rem auto;
+  }
+  
+
 }
 
 @media screen and (max-width: 660px) {
@@ -320,6 +360,12 @@ input:focus {
 
   .gallery__wrapper > a {
     height: 30rem;
+  }
+
+  /* Contact */
+
+  .con_left > p {
+    font-size: .9rem;
   }
 }
 
@@ -356,6 +402,11 @@ input:focus {
 
   /* Contact */
 
+  .con_left > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
   .con_left > h3 {
     font-size: 2rem;
   }
@@ -391,9 +442,9 @@ input:focus {
   }
 
   .con_left > h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-left: 0rem;
-    margin-left: -1rem;
+    margin-left: 0rem;
   }
 
   .con_left > p {
@@ -413,10 +464,7 @@ input:focus {
   }
 
   .con_right > h3 {
-    font-size: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    margin-left: 0rem;
+    
   }
 
   .con_form > input,
@@ -457,9 +505,9 @@ input:focus {
 
   .contact_ol li > b {
     font-weight: 900;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  
+
   .con_form > input,
   textarea {
     width: 12rem;

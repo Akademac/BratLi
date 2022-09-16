@@ -356,16 +356,35 @@
   .addToCart__btn,
   .viewDetails__btn,
   .goBack__btn {
-    margin-left: 0.1rem;
+    margin-left: 0.3rem;
     padding: 0.2rem;
   }
 
   .viewDetails__btn,
   .goBack__btn {
     margin-left: 0rem;
-    margin-right: 0.1rem;
+    margin-right: 0.3rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  /* Card BTNS */
+
+  .addToCart__btn,
+  .viewDetails__btn,
+  .goBack__btn {
+    margin-left: 0.3rem;
+    padding: 0.2rem;
+    font-size: .8rem;
+  }
+
+  .viewDetails__btn,
+  .goBack__btn {
+    margin-left: 0rem;
+    margin-right: 0.3rem;
+  }
+}
+
 
 
 @media screen and (max-width: 305px) {

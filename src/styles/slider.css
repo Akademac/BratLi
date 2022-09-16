@@ -297,6 +297,11 @@
 
 @media screen and (max-width: 350px) {
   /* Slider */
+
+  .slider__container > h3 {
+    font-size: 1rem;
+  }
+
   .mpSlider__card {
     width: 14rem;
     height: 22rem;
