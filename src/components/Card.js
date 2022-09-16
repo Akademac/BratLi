@@ -11,7 +11,7 @@ const Card = ({name, price, material, box, popul, qty, forWho, img, instock, id}
       <div className="card__details">
         <h3>{name}</h3>
         <span>{price}.00 RSD</span>
-        <span className="product__id">#{id}</span>
+        <span className="product__id_product">#{id}</span>
       </div>
       <div className="card__btns">
         <AddToCartBtn id={id} />

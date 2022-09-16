@@ -70,6 +70,7 @@
   transition: 2s all;
   cursor: pointer;
   border-radius: 10px;
+  position: relative;
 }
 
 .card__wrapper:hover {
@@ -113,7 +114,7 @@
   margin-top: 1rem;
 }
 
-.product__id {
+.product__id_product {
   position: absolute;
   color: var(--mainRed);
   font-weight: 700;
@@ -135,6 +136,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
 }
 
 /* Products Buttons */
@@ -254,7 +257,7 @@
   position: relative;
 }
 
-.product__id__dp {
+.product__id_product__dp {
   top: 110% !important;
   padding: 0.2rem !important;
   margin-left: 0.2rem;
@@ -315,7 +318,87 @@
 
 /* Media Queris */
 
+@media screen and (max-width: 1800px) {
+  /* Products Container */
+  .products__container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  /* Products Container */
+  .products__container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  /* Products Container */
+  .products__container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Filter div */
+
+  .productsFilter__div > span:first-of-type {
+    font-size: 0.7rem;
+  }
+
+  .sort__span {
+    padding-top: 0.17rem;
+  }
+
+  .sort__span > p,
+  .sort__div > p {
+    font-size: 0.7rem;
+  }
+
+  .sort__div {
+    padding: 1rem;
+    left: 3rem;
+    top: -2.9rem;
+  }
+
+  /* Card */
+
+  .card__wrapper {
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Product ID */
+  .product__id_product {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Card */
+
+  .card__wrapper {
+    width: 20rem;
+  }
+}
+
 @media screen and (max-width: 385px) {
+  /* Filter Product */
+
+  .sort__span {
+    float: left;
+    /* margin-top: 0.5rem; */
+  }
+
+  .sort__div {
+    /* left: 3rem;
+    top: -0.9rem; */
+  }
+
   /* Card BTNS */
 
   .addToCart__btn,
@@ -324,12 +407,6 @@
     border: none;
     margin-left: 0.5rem;
     padding: 0.2rem;
-    text-align: center;
-    border-radius: 5px;
-    background-color: var(--mainWhite);
-    cursor: pointer;
-    transition: 2s all;
-    pointer-events: all;
   }
 
   .viewDetails__btn,
@@ -350,6 +427,21 @@
   }
 }
 
+@media screen and (max-width: 365px) {
+  /* Filter Product */
+
+  .sort__span {
+    /* float: left; */
+    margin-top: 0.5rem;
+  }
+
+  .sort__div {
+    left: 3rem;
+    top: -0.9rem;
+  }
+
+}
+
 @media screen and (max-width: 360px) {
   /* Card BTNS */
 
@@ -365,6 +457,26 @@
     margin-left: 0rem;
     margin-right: 0.3rem;
   }
+
+  /* Card */
+
+  .card__wrapper {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  /* Product ID */
+  .product__id_product {
+    top: 50%;
+    font-size: 0.7rem !important;
+  }
+
+  /* Card */
+  .card__wrapper {
+    width: 16rem;
+    height: 28rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -375,7 +487,7 @@
   .goBack__btn {
     margin-left: 0.3rem;
     padding: 0.2rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .viewDetails__btn,
@@ -385,8 +497,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 305px) {
   /* Card BTNS */
 
@@ -395,7 +505,7 @@
   .goBack__btn {
     margin-left: 0.4rem;
     padding: 0.2rem;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .viewDetails__btn,
@@ -405,6 +515,23 @@
   }
 }
 
+@media screen and (max-width: 300px) {
+  /* Card Img */
+  .cardImg__div {
+    height: 60%;
+  }
+
+  /* Product ID */
+  .product__id_product {
+    top: 85%;
+  }
+
+  /* Card */
+  .card__wrapper {
+    width: 15rem;
+    height: 26rem;
+  }
+}
 
 @media screen and (max-width: 290px) {
   /* Card BTNS */
@@ -412,18 +539,14 @@
   .addToCart__btn,
   .viewDetails__btn,
   .goBack__btn {
-    margin-left: 0.1rem;
+    margin-left: 0.2rem;
     padding: 0.2rem;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   .viewDetails__btn,
   .goBack__btn {
     margin-left: 0rem;
-    margin-right: 0.1rem;
+    margin-right: 0.2rem;
   }
 }
-
-
-
-
