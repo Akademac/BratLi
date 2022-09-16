@@ -16,12 +16,12 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/products/:forWhom' element={<Products />} />
-          <Route path='/product/:id' element={<SingleProduct />} />
-          <Route path='/gallery' element={<GalleryPage />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/checkout' element={<CheckOutPage />} />
+          <Route path='/BratLi' element={<Home />} />
+          <Route path='/BrarLi/products/:forWhom' element={<Products />} />
+          <Route path='/BratLi/product/:id' element={<SingleProduct />} />
+          <Route path='/BratLi/gallery' element={<GalleryPage />} />
+          <Route path='/BratLi/cart' element={<Cart />} />
+          <Route path='/BratLi/checkout' element={<CheckOutPage />} />
         </Routes>
         <Footer />
       </Router>
