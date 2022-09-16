@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/BratLi/static/css/main.9ac04095.css",
-    "main.js": "/BratLi/static/js/main.77bf696d.js",
+    "main.css": "/BratLi/static/css/main.dcc72013.css",
+    "main.js": "/BratLi/static/js/main.33a8fe3f.js",
     "static/media/galleryBackground.jpg": "/BratLi/static/media/galleryBackground.e76ae369cc96d9745e35.jpg",
     "index.html": "/BratLi/index.html",
-    "main.9ac04095.css.map": "/BratLi/static/css/main.9ac04095.css.map",
-    "main.77bf696d.js.map": "/BratLi/static/js/main.77bf696d.js.map"
+    "main.dcc72013.css.map": "/BratLi/static/css/main.dcc72013.css.map",
+    "main.33a8fe3f.js.map": "/BratLi/static/js/main.33a8fe3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ac04095.css",
-    "static/js/main.77bf696d.js"
+    "static/css/main.dcc72013.css",
+    "static/js/main.33a8fe3f.js"
   ]
 }
