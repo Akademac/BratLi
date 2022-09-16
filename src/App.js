@@ -12,7 +12,7 @@ import CheckOutPage from './components/pages/CheckOutPage';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" basename='/BratLi'>
       <Router>
         <Header />
         <Routes>
