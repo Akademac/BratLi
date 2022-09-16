@@ -56,7 +56,7 @@ const SingleProduct = () => {
     jsxElement = (
       <div className="sp__div">
       <div className="sp__imgDiv">
-         <img src={singleProduct.img} alt={singleProduct.name} />
+         <img src={`/BratLi/${singleProduct.img}`} alt={singleProduct.name} />
       </div>
       <div className="sp__details">
         <h3>{singleProduct.name}</h3>

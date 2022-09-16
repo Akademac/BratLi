@@ -1,5 +1,5 @@
 import "../styles/footer.css";
-const logo = window.location.origin + "/assets/Logoes/mainLogo_2.png";
+const logo = window.location.origin + "/BratLi/assets/Logoes/mainLogo_2.png";
 
 const Footer = () => {
   return (

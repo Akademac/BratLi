@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/BratLi' element={<Home />} />
-          <Route path='/BrarLi/products/:forWhom' element={<Products />} />
+          <Route path='/BratLi/products/:forWhom' element={<Products />} />
           <Route path='/BratLi/product/:id' element={<SingleProduct />} />
           <Route path='/BratLi/gallery' element={<GalleryPage />} />
           <Route path='/BratLi/cart' element={<Cart />} />

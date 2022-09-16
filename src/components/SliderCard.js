@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 
 const SliderCard = ({ name, price, material, box, popul, qty, forWho, img, instock, id }) => {
   let jsxElement;
+  let imgs = '/BratLi' + img;
 
   jsxElement = (<>
     <div className="mpSlider_cardImg__div">
-      <img src={img} alt="name" />
+      <img src={imgs} alt="name" />
     </div>
     <div className="mpSlide_card__details">
       <h3>{name}</h3>

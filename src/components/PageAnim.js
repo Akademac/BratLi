@@ -1,4 +1,4 @@
-const mainLogo2 = window.location.origin + "/assets/Logoes/mainLogo2.png";
+const mainLogo2 = window.location.origin + "/BratLi/assets/Logoes/mainLogo2.png";
 
 const PageAnim = () => {
   return (

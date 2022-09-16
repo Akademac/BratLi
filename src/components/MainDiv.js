@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const mainLogo2 = window.location.origin + "/assets/Logoes/mainLogo2.png";
-const mainLogo3 = window.location.origin + "/assets/Logoes/mainLogo3.png";
-const mainLogo4 = window.location.origin + "/assets/Logoes/mainLogo4.png";
+const mainLogo2 = window.location.origin + "/BratLi/assets/Logoes/mainLogo2.png";
+const mainLogo3 = window.location.origin + "/BratLi/assets/Logoes/mainLogo3.png";
+const mainLogo4 = window.location.origin + "/BratLi/assets/Logoes/mainLogo4.png";
 
 const MainDiv = () => {
   let [logoAnim, setLogoAnim] = useState(mainLogo2);
@@ -28,10 +28,10 @@ const MainDiv = () => {
       <img src={logoAnim} alt="Main Logo" />
       <div className="rightDots">
         <ul>
-          <li><Link to='/products/men'><i className="fas fa-male"></i></Link></li>
-          <li><Link to='/products/women'><i className="fas fa-female"></i></Link></li>
-          <li><Link to='/products/kids'><i className="fas fa-child"></i></Link></li>
-          <li><Link to='/products/pets'><i className="fas fa-paw"></i></Link></li>
+          <li><Link to='/BratLi/products/men'><i className="fas fa-male"></i></Link></li>
+          <li><Link to='/BratLi/products/women'><i className="fas fa-female"></i></Link></li>
+          <li><Link to='/BratLi/products/kids'><i className="fas fa-child"></i></Link></li>
+          <li><Link to='/BratLi/products/pets'><i className="fas fa-paw"></i></Link></li>
         </ul>
       </div>
     </div>

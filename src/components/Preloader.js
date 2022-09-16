@@ -1,4 +1,4 @@
-const loading = window.location.origin + "/assets/Images/loading.gif";
+const loading = window.location.origin + "/BratLi/assets/Images/loading.gif";
 
 const Preloader = ({mt}) => {
   return (

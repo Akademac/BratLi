@@ -4,7 +4,7 @@ import PageAnim from '../PageAnim';
 import { Link } from "react-router-dom";
 import '../../styles/cart.css';
 import KeepShoping from "../KeepShopping";
-const deleteBtn = window.location.origin + '/assets/Icons/deleteBtn.png'
+const deleteBtn = window.location.origin + '/BratLi/assets/Icons/deleteBtn.png'
 
 
 const Cart = () => {
@@ -48,7 +48,7 @@ const Cart = () => {
   
           </div>
           <div className="cartCard__imgDv">
-            <img src={e.img} alt={e.name} />
+            <img src={`/BratLi/${e.img}`} alt={e.name} />
           </div>
           <div className="cartCard__details">
             {e.price}.00 RSD
@@ -58,7 +58,7 @@ const Cart = () => {
     })
   }
 
-  cartArr.map(e => {
+  cartArr.forEach(e => {
     totalArr.push(e.price);
   })
 
@@ -92,8 +92,7 @@ const Cart = () => {
           <p>Popust na količinu: {cartArr.length >= 3 ? <b>ostvaren</b>: <b>neostvaren</b>}.</p>
         </div>
         <div className="priceWithPercent">Cena nakon popusta: <b>{cartArr.length > 2 ? priceWithPercent : totalPrice}.00 RSD</b></div>
-        {cartArr.length > 0 && <Link to='/checkout'><button className="buying__btn">Kupite!</button></Link>} 
-        
+        {cartArr.length > 0 && <Link to='/BratLi/checkout'><button className="buying__btn">Kupite!</button></Link>} 
       </div>
     </div>
   )
