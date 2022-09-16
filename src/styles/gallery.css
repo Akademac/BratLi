@@ -55,31 +55,30 @@
 .left_arrow {
   z-index: 10;
   position: absolute;
-  left: 2%;
+  left: 1rem!important;
   top: 50%;
   font-size: 2rem;
   color: black;
-  opacity: .3;
+  opacity: .1;
   transition: 2s all;
   display: inline;
 }
 
 .right_arrow {
-  right: 2%;
+  right: 1.5rem!important;
   z-index: 10;
   position: absolute;
   top: 50%;
   font-size: 2rem;
   color: black;
-  opacity: .3;
+  opacity: .1;
   transition: 2s all;
   display: none;
 }
 
 .left_arrow:hover, .right_arrow:hover {
-  opacity: 1;
+  opacity: .5;
   cursor: pointer;
-  transform: scale(1.4);
 }
 
 .go_back {

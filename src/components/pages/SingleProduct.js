@@ -65,7 +65,7 @@ const SingleProduct = () => {
         <span>Kutija: {singleProduct.box === true ? 'Da' : 'Ne'}</span>
         <span>Namenjeno: {jsxForWhom}</span>
         <span>Na stanju: {singleProduct.instock === true ? 'Da': 'Ne'}</span>
-        <span className="product__id product__id__dp">#{singleProduct.id}</span>
+        <span className="product__id_singleProduct">#{singleProduct.id}</span>
       </div>
       <div className="sp__btns">
         <AddToCartBtn id={singleProduct.id}/>
