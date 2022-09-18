@@ -65,7 +65,7 @@
 }
 
 .right_arrow {
-  right: 1.5rem!important;
+  right: 1rem!important;
   z-index: 10;
   position: absolute;
   top: 50%;
@@ -103,10 +103,78 @@
 
 /* Meida queris */
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
   .left_arrow, .right_arrow {
     color: var(--mainWhite);
     opacity: .9;
   }
 
+} */
+
+/* Window height arrows! Queris */
+
+@media screen and (max-height: 800px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 52%;
+  }
+  
+  .right_arrow {
+    top: 52%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 53%;
+  }
+  
+  .right_arrow {
+    top: 53%;
+  }
+}
+
+
+@media screen and (max-height: 500px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 57%;
+  }
+  
+  .right_arrow {
+    top: 57%;
+  }
+}
+
+
+@media screen and (max-height: 400px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 60%;
+    font-size: 1.5rem;
+  }
+  
+  .right_arrow {
+    top: 60%;
+    font-size: 1.5rem;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Arrows */
+
+  .left_arrow {
+    font-size: 1.5rem;
+  }
+  
+  .right_arrow {
+    font-size: 1.5rem;
+
+  }
 }

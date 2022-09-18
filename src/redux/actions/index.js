@@ -22,7 +22,7 @@ export const getData = (params) => {
           payload: err
         })
       })
-    }, 2000)
+    }, 3000)
   }
 }
 
