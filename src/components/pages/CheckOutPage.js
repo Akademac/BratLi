@@ -1,6 +1,7 @@
 import {useSelector} from 'react-redux';
 
 const CheckOutPage = () => {
+  window.scrollTo(0, 0);
   const cartData = useSelector(state => state.addToCartR);
   const allData = useSelector(state => state.gettingAllDataR);
   let buyingArr = [];
